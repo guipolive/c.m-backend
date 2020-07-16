@@ -22,6 +22,13 @@ module.exports = {
         // retornando os dados para exibição da música criada
         return res.json(music);
     },
+    
+    async test(req, res){
+        console.log('Chegou no Teste de Músicas')
+
+        return res.json({"test": "worth"});
+    },
+    
 
     /* async show(req, res){
         const entity = await Entity.findById(req.params.id); // buscando uma entidade pelo ID passado por parâmetro

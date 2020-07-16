@@ -7,6 +7,7 @@ const ArtistController = require('./controllers/ArtistController');
 
 // rotas de music
 routes.get('/musics', MusicController.index); // mostra tudo
+routes.get('/musics-test', MusicController.test); // mostra tudo
 routes.post('/musics', MusicController.store); // cadastro 
 
 // rotas de artist
